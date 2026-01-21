@@ -1,22 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" />
+<html lang="it">
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/main.html" />
-    </main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logiq Tap | Consulenza e Innovazione Digitale</title>
 
-    <load src="./partials/footer.html" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxyZWN0IHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgcng9IjgiIGZpbGw9IiMwNTAxMTUiLz4KICAgIDxwYXRoIGQ9Ik04IDEyaDR2MTJIOFYxMlpNMTQgMTJoMTB2NGgtNnY4aC00VjEyWiIgZmlsbD0iI2NjZmYwMCIvPgo8L3N2Zz4=">
 
-    <script type="module" src="./main.js"></script>
-  </body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <load src="./partials/header.html" />
+
+  <main>
+    <load src="./partials/main.html" />
+  </main>
+
+  <load src="./partials/footer.html" />
+
+  <div id="cookie-popup" class="cookie-popup">
+    <div class="cookie-popup__content">
+      <div class="cookie-popup__icon"><i data-lucide="cookie"></i></div>
+      <div class="cookie-popup__text">
+        <p>Questo sito utilizza i cookies per migliorare l'esperienza di navigazione. Continuando, accetti la nostra <a href="./cookies.html">Cookie Policy</a>.</p>
+      </div>
+      <div class="cookie-popup__actions">
+        <button id="cookie-accept" class="btn btn--primary btn--sm">Accetta</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script type="module" src="./main.js"></script>
+</body>
 </html>

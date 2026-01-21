@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logiq Tap | Consulenza e Innovazione Digitale</title>
+
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxyZWN0IHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgcng9IjgiIGZpbGw9IiMwNTAxMTUiLz4KICAgIDxwYXRoIGQ9Ik04IDEyaDR2MTJIOFYxMlpNMTQgMTJoMTB2NGgtNnY4aC00VjEyWiIgZmlsbD0iI2NjZmYwMCIvPgo8L3N2Zz4=">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+  <body>
+    <load
+      src="./partials/header.html"
+/>
+<main>
+  <section class="pages">
+    <div class="container">
+      <h1>Contattaci</h1>
+      <p>Siamo pronti ad ascoltare il tuo progetto e offrirti la migliore consulenza strategica basata su tecnologie AI
+        e innovazione digitale.</p>
+
+      <div class="contact__grid" style="margin-top: 50px;">
+        <div class="contact__info">
+          <h2>Dettagli Operativi</h2>
+          <div class="contact__details">
+            <div class="contact__item">
+              <i data-lucide="map-pin"></i>
+              <div>
+                <span>Indirizzo</span>
+                <p>Via della Conciliazione, 4, 00193 Roma, Italia</p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <i data-lucide="phone"></i>
+              <div>
+                <span>Telefono</span>
+                <p>+39 06 9763 7884</p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <i data-lucide="mail"></i>
+              <div>
+                <span>E-mail</span>
+                <p>hello@logiq-tap.life</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__form-container">
+          <form id="logiq-contact-form" class="form">
+            <input type="text" id="name" class="form__input" placeholder="Nome completo" required>
+            <input type="email" id="email" class="form__input" placeholder="Email" required>
+            <input type="tel" id="phone" class="form__input" placeholder="Telefono (solo cifre)" required>
+            <textarea id="message" class="form__textarea" placeholder="Come possiamo aiutarti?" required></textarea>
+
+            <div class="form__captcha">
+              <label id="captcha-label">...</label>
+              <input type="text" id="captcha-input" class="form__input" style="max-width: 100px;">
+            </div>
+
+            <div class="form__consent">
+              <input type="checkbox" id="consent" required>
+              <label for="consent">Accetto la Privacy Policy.</label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">Invia Messaggio</button>
+            <div id="form-status" class="form__status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+    <load src="./partials/footer.html" />
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="cookie-popup__content">
+        <div class="cookie-popup__icon"><i data-lucide="cookie"></i></div>
+        <div class="cookie-popup__text">
+          <p>Questo sito utilizza i cookies per migliorare l'esperienza di navigazione. Continuando, accetti la nostra <a href="./cookies.html">Cookie Policy</a>.</p>
+        </div>
+        <div class="cookie-popup__actions">
+          <button id="cookie-accept" class="btn btn--primary btn--sm">Accetta</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+  </html>
