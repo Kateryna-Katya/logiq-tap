@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logiq Tap | Consulenza e Innovazione Digitale</title>
+
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxyZWN0IHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgcng9IjgiIGZpbGw9IiMwNTAxMTUiLz4KICAgIDxwYXRoIGQ9Ik04IDEyaDR2MTJIOFYxMlpNMTQgMTJoMTB2NGgtNnY4aC00VjEyWiIgZmlsbD0iI2NjZmYwMCIvPgo8L3N2Zz4=">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script type="module" crossorigin src="/logiq-tap/assets/main-DSRA0_2F.js"></script>
+  <link rel="stylesheet" crossorigin href="/logiq-tap/assets/main-Ac6dobyf.css">
+</head>
+  <body>
+    <header class="header" id="header">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <span class="logo__text">Logiq</span><span class="logo__dot">-</span>Tap
+    </a>
+
+    <nav class="nav" id="nav-menu">
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#about" class="nav__link">Chi Siamo</a></li>
+        <li><a href="#services" class="nav__link">Servizi</a></li>
+        <li><a href="#innovation" class="nav__link">Innovazione</a></li>
+        <li><a href="#blog" class="nav__link">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--primary">Contattaci</a>
+      <button class="burger" id="burger-menu" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu-overlay">
+  <div class="mobile-menu__container">
+    <ul class="mobile-menu__list">
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">Chi Siamo</a></li>
+      <li><a href="#services" class="mobile-link">Servizi</a></li>
+      <li><a href="#innovation" class="mobile-link">Innovazione</a></li>
+      <li><a href="#blog" class="mobile-link">Blog</a></li>
+      <li><a href="#contact" class="mobile-link btn btn--primary">Contattaci</a></li>
+    </ul>
+  </div>
+</div>
+<main>
+  <section class="pages">
+    <div class="container">
+      <h1>Contattaci</h1>
+      <p>Siamo pronti ad ascoltare il tuo progetto e offrirti la migliore consulenza strategica basata su tecnologie AI
+        e innovazione digitale.</p>
+
+      <div class="contact__grid" style="margin-top: 50px;">
+        <div class="contact__info">
+          <h2>Dettagli Operativi</h2>
+          <div class="contact__details">
+            <div class="contact__item">
+              <i data-lucide="map-pin"></i>
+              <div>
+                <span>Indirizzo</span>
+                <p>Via della Conciliazione, 4, 00193 Roma, Italia</p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <i data-lucide="phone"></i>
+              <div>
+                <span>Telefono</span>
+                <p>+39 06 9763 7884</p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <i data-lucide="mail"></i>
+              <div>
+                <span>E-mail</span>
+                <p>hello@logiq-tap.life</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__form-container">
+          <form id="logiq-contact-form" class="form">
+            <input type="text" id="name" class="form__input" placeholder="Nome completo" required>
+            <input type="email" id="email" class="form__input" placeholder="Email" required>
+            <input type="tel" id="phone" class="form__input" placeholder="Telefono (solo cifre)" required>
+            <textarea id="message" class="form__textarea" placeholder="Come possiamo aiutarti?" required></textarea>
+
+            <div class="form__captcha">
+              <label id="captcha-label">...</label>
+              <input type="text" id="captcha-input" class="form__input" style="max-width: 100px;">
+            </div>
+
+            <div class="form__consent">
+              <input type="checkbox" id="consent" required>
+              <label for="consent">Accetto la Privacy Policy.</label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">Invia Messaggio</button>
+            <div id="form-status" class="form__status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+    <footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="/" class="logo logo--footer">
+        <span>Logiq</span>-Tap
+      </a>
+      <p class="footer__desc">
+        Trasformiamo le sfide digitali in opportunità di crescita con tecnologie di nuova generazione.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Menu</h4>
+      <ul class="footer__links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Chi Siamo</a></li>
+        <li><a href="#services">Servizi</a></li>
+        <li><a href="#innovation">Innovazione</a></li>
+        <li><a href="contact.html">Contattaci</a></li> </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Legale</h4>
+      <ul class="footer__links">
+        <li><a href="privacy.html">Informativa sulla Privacy</a></li>
+         <li><a href="data-treatment.html">Trattamento Dati</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+           <li><a href="terms.html">Termini di Utilizzo</a></li>
+            <li><a href="refund.html">Politica di Rimborso</a></li>
+             <li><a href="disclaimer.html">Disclaimer</a></li> </ul>
+             <li><a href="contact.html">Contattaci</a></li> </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Contatti</h4>
+      <ul class="footer__contact">
+        <li>
+          <i data-lucide="map-pin"></i>
+          <span>Via della Conciliazione, 4, 00193 Roma, Italia</span>
+        </li>
+        <li>
+          <i data-lucide="phone"></i>
+          <span>+39 06 9763 7884</span>
+        </li>
+        <li>
+          <i data-lucide="mail"></i>
+          <span>hello@logiq-tap.life</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>&copy; 2026 Logiq Tap. Tutti i diritti riservati. P.IVA IT0123456789</p>
+  </div>
+</footer>
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="cookie-popup__content">
+        <div class="cookie-popup__icon"><i data-lucide="cookie"></i></div>
+        <div class="cookie-popup__text">
+          <p>Questo sito utilizza i cookies per migliorare l'esperienza di navigazione. Continuando, accetti la nostra <a href="./cookies.html">Cookie Policy</a>.</p>
+        </div>
+        <div class="cookie-popup__actions">
+          <button id="cookie-accept" class="btn btn--primary btn--sm">Accetta</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+  </body>
+  </html>
